@@ -1,0 +1,26 @@
+<import src="product-item/product-item-template.wxml" />
+ <!--pages/page4/page4.wxml-->
+  <view class="page-container">
+    <view class="skintime">
+      <text class="active">SKIN TIME\n期待您预约臻享</text>
+    </view>
+    <view class="section-msg" style="{{isshort?'height:140px':''}}">
+      <view class="section">
+        手是最好的护肤工具，每一个步骤都有其独特作用：按摩速度、次数、时长、幅度，手的力度不同，都会有不同的效果
+      </view>
+      <view class="section">
+        传承娇韵诗SPA美颜中心独特纯手工护理，以触摸的科学对话肌肤，通过天然植萃科技产品进行深层呵护，植物独有的自然气息，将使您在这舒缓时间获得身心的放松，感受到肌肤美妙的变化。
+
+      </view>
+              <view class="arrow {{isshort ? 'arrowup':''}}">
+      <!--<view class="arrow-mask"></view>-->
+        <icon class="iconfont icon-xiangshangjiantou {{isshort ? 'icon-xiangxiajiantou':''}}" />
+        <icon class="iconfont icon-xiangshangjiantou {{isshort ? 'icon-xiangxiajiantou':''}}"  catchtap="onIconTap"/>
+      </view>
+    </view>
+  </view>
+  <block wx:for="{{productList}}">
+    <view>
+      <template is="product" data="{{...item}}" />
+    </view>
+  </block>

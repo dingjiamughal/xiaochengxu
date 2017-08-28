@@ -1,0 +1,10 @@
+<view class="alertcontainer">
+  <view class="alert-body">
+    <icon class="alert-close" type="clear" size="12" />
+    <view class="alert-header msg-alert-header">
+      <view>
+        <text>您的预约已经修改成功！</text>
+      </view>
+    </view>
+  </view>
+</view>

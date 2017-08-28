@@ -1,0 +1,61 @@
+/* pages/page2/page2.wxss */
+.region-picker picker {
+    width:750rpx;
+    height:111rpx;
+    line-height: 111rpx;
+    text-align: center;
+    background: url("../../image/page2-topbar.png")
+}
+.question {
+    height:70rpx;
+    line-height: 70rpx;
+    border-bottom: 1px solid #bebebe;
+    text-align: center;
+    font-size: 12px;
+}
+.question i {
+    color: #ca0032;
+    margin-right:20rpx;
+}
+.message-list {
+    color:#a5a5a5;
+    position: relative;
+    border-bottom: 1px solid #bebebe;
+    padding:0 57rpx;
+}
+.message-list.active {
+    color:#ca0032;
+}
+.message-list .name {
+    font-size:16px;
+    margin:30rpx 0;
+}
+.message-list .address,.message-list .phone {
+    line-height:20px;
+}
+.message-list .phone{
+    margin-bottom: 30rpx;
+}
+.sidebar {
+    width:10rpx;
+    height:134rpx;
+    background: #ca0032;
+    position: absolute;
+    left:0;
+    top:42rpx;
+}
+.bot-container {
+    float:left;
+    width:750rpx;
+    height:168rpx;
+    background: url("../../image/page2-botbg.png")
+}
+.bot-container .choose {
+    background: #ca0032;
+    color:#fff;
+    width:440rpx;
+    height:68rpx;
+    line-height: 68rpx;
+    text-align: center;
+    margin:50rpx 155rpx;
+}

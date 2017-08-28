@@ -1,0 +1,16 @@
+<view class="alertcontainer">
+  <view class="alert-body">
+    <icon class="alert-close" type="clear" size="12"/>
+    <view class="alert-header cancel-alert-header">
+      <view>是否确认取消？</view>
+    </view>
+    <view class="alert-middle cancel-alert-middle">
+        <view class="row">上海嘉里中心店</view>
+        <view class="row">2017.4.13 周四</view>
+        <view class="row">10：00-11：00</view>
+    </view>
+    <view class="alert-bottom">
+        <button type="" bindtap="gongxi"> 确认 </button>
+    </view>
+  </view>
+</view>

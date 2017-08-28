@@ -1,0 +1,42 @@
+
+<!--pages/page2/page2.wxml-->
+<import src="msg-item/msg-item-template.wxml" />
+<view class="region-picker">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">{{array[index]}}</view>
+  </picker>
+</view>
+<view class="question">
+<i class="iconfont icon-i1"></i>
+  <text class="active">请选择您想要体验美肌护理服务的柜台</text>
+</view>
+<block wx:for="{{msglist}}">
+  <view class="message-list {{item.color?'active':''}}" data-msgId="{{item.msgid}}" catchtap="onmsgtap">
+    <template is="msgItem" data="{{...item}}"></template>
+  </view>
+</block>
+<view class="bot-container">
+  <view class="choose" catchtap="onchoosetap">选择</view>
+</view>
+
+<view class="modal-mask" wx-if="{{isshow}}"></view>
+<view class="modalcontainer" wx-if="{{isshow}}">
+
+  <view class="modal-body">
+    <icon class="modal-close" type="clear" size="12" catchtap="onIcontap" />
+    <view class="modal-header msg-modal-header">
+      <view><text>敬请期待！</text></view>
+    </view>
+    <view class="modal-middle msg-modal-middle">
+        <view class="row">抱歉，您所在的柜台</view>
+        <view class="row">尚未开放美肌护理体验活动。</view>
+        <view class="row moremsg">更多消息，请拨打400-620-6618查询</view>
+    </view>
+  </view>
+</view>
+
+<view class="btn-confirm-group" wx:if="{{confirmisshow}}">
+<view class="modal-mask"></view>
+<view class="btn btn-confirm" catchtap="onConfirmCancel">确认取消预约</view>
+<view class="btn btn-cancel" catchtap="onConfirmclose">取消</view>
+</view>

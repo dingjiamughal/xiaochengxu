@@ -1,0 +1,66 @@
+/* pages/page3/page3.wxss */
+.question {
+    height:70rpx;
+    line-height: 70rpx;
+    border-bottom: 1px solid #bebebe;
+    text-align: center;
+    font-size: 12px;
+}
+.question i {
+    color: #ca0032;
+    margin-right:20rpx;
+}
+.calendar-group {
+    width:750rpx;
+    height:408rpx;
+    background: #f6f6f6;
+    border-bottom:1px solid #bebebe;
+}
+.skintime{
+    position: relative;
+}
+.skintime image {
+    width:703rpx;
+    height:451rpx;
+}
+.datepicker-section .picker {
+    width:447rpx;
+    height:85rpx;
+    position: absolute;
+    right:35rpx;
+    bottom:100rpx;
+    border-top:1px solid #ca0032;
+    border-bottom:1px solid #ca0032;
+    line-height: 85rpx;
+    text-align: center;
+    font-size:18px;
+    letter-spacing: 3px;
+}
+.chooseTime{
+    position: absolute;
+    right:35rpx;
+    bottom:33rpx;
+    width:447rpx;
+    text-align: center;
+}
+.chooseTime icon {
+    color:#cbcbcb;
+    margin-right: 25rpx;
+}
+.botbtn-box{
+    width:750rpx;
+    height:168rpx;
+    background: url("../../image/page3-botbg.png");
+    margin-top:44rpx;
+    padding-top:50rpx;
+}
+.botbtn-box .botbtn {
+    width:440rpx;
+    height:68rpx;
+    line-height:68rpx;
+    text-align: center;
+    margin:0 auto;
+    background: #ca0032;
+    color:#fff;
+    letter-spacing:1px;
+}

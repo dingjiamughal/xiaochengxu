@@ -1,0 +1,84 @@
+/* pages/page1/page1.wxss */
+
+.topbar,.mid-banner image {
+    width:750rpx;
+    height:89rpx;
+
+    display: block;
+}
+.topbar{
+    background: url("../../image/page1-topbar.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.video-container {
+    position: relative;
+}
+.video-container video {
+    width:750rpx;
+    height:405rpx;
+    display: block;
+    /*background:url("../../image/page1-face.png");*/
+}
+.username {
+    float:right;
+    margin-right: 40rpx;
+    line-height: 89rpx;
+    font-size: 16px;    
+}
+.adv-container {
+    position: absolute;
+    top:186rpx;
+    right:85rpx;
+    color:#ca0030;
+    line-height: 54rpx;
+    text-align: center;
+}
+.botmsg {
+    width:640rpx;
+    height:108rpx;
+    color:#fff;
+    background:#ca0032;
+    position: absolute;
+    bottom:-54rpx;
+    left:55rpx;
+    z-index:9;
+    text-align: center;
+    line-height: 54rpx;
+}
+.mid-banner image {
+    width:640rpx;
+    height:169rpx;
+    margin:80rpx auto 0;
+}
+.skin-time {
+    width:670rpx;
+    height:367rpx;
+    margin-left: -20rpx;
+}
+.bot {
+    width:640rpx;
+    margin:55rpx auto 0;
+    font-size: 10px;
+    position: relative;
+}
+.word-group{
+    text-align: right;
+    position: absolute;
+    right:0;
+    top:65rpx;
+    /*letter-spacing: 1px;*/
+}
+.word-group .active,.toappointment {
+    color:#ca0032;
+    font-size:20px;
+}
+.toappointment{
+    font-size: 24px;
+    margin:32rpx 0;
+}
+
+.history {
+    height:47rpx;
+    width:199rpx;
+}

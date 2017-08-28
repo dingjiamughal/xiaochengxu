@@ -1,0 +1,7 @@
+<button type="default" size="default" bindtap="urlbind"> 完成绑定 </button>
+<button type="default" size="default" bindtap="urlmsg"> 信息验证 </button>
+<button type="default" size="default" bindtap="baoqian"> 信息验证2 </button>
+<button type="default" size="default" bindtap="urlmsg3"> 信息验证3 </button>
+<button type="default" size="default" bindtap="urlcancel"> 确认取消 </button>
+<button type="default" size="default" bindtap="urlcancel"> 取消修改 </button>
+<button type="default" size="default" bindtap="gongxi"> 恭喜您 </button>

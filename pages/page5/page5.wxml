@@ -1,0 +1,61 @@
+
+<!--pages/page5/page5.wxml-->
+<view class="question">
+  <i class="iconfont icon-i1"></i>
+  <text class="active">请确认您的预约信息</text>
+</view>
+<view class="product-list">
+  <view class="product-img">
+    <image src="{{productImage}}"></image>
+  </view>
+  <view class="product-info">
+    <image class="product-textpic" src="{{textImage}}"></image>
+    <view class="activity-group">
+      <image class="product-butterfly" src="../../image/butterfly.png"></image>
+      <view class="activity-msg">
+        <text>上海嘉里中心店\n</text>
+        <text>{{day}}\n</text>
+        <text>{{time}}</text>
+      </view>
+    </view>
+  </view>
+  <image class="skintime" src="../../image/page1-skintime.png"></image>
+</view>
+<view class="appointmentComplete" catchtap="onCompleteTap">完成预约</view>
+<view class="botbg">
+  <image src="../../image/page5-bot.png"></image>
+</view>
+
+<!--modal1-->
+<view class="modalcontainer" wx:if="{{isshow}}">
+  <view class="modal-body">
+    <icon class="modal-close" catchtap="onCloseTap" type="clear" size="12"/>
+    <view class="modal-header cancel-modal-header">
+      <view><text>您的美肌之旅即将启程</text></view>
+    </view>
+
+      <image class="product-butterfly" src="../../image/butterfly.png"></image>
+    <view class="modal-middle cancel-modal-middle">
+        <view class="row">上海嘉里中心店</view>
+        <view class="row">2017.4.13 周四</view>
+        <view class="row">10：00-11：00</view>
+    </view>
+
+    <view class="modal-bottom cancel-modal-bottom">
+        <view><text>*为了与您此次的美肌之旅有个完美服务体验，</text></view>
+        <view><text>请您提前十分钟抵达，做好准备</text></view>
+    </view>
+  </view>
+</view>
+<!--modal2-->
+<view class="modalcontainer" wx:if="{{isshow2}}">
+  <view class="modal-body">
+    <icon class="modal-close" catchtap="onCpmpleteTap" type="clear" size="12" />
+    <view class="modal-appointmentComplete">
+      <view>
+        <text>您的预约已经修改成功！</text>
+      </view>
+    </view>
+  </view>
+</view>
+

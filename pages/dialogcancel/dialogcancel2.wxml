@@ -1,0 +1,13 @@
+<view class="alertcontainer">
+  <view class="alert-body">
+    <icon class="alert-close" type="clear" size="12"/>
+    <view class="alert-header cancel-alert-header" style="border:0;padding-bottom:0;">
+      <view>是否确认<text>取消修改？</text></view>
+      <view style="font-size:10px;margin-top:10rpx;">我们将为您保留您的原有预约消息</view>
+    </view>
+
+    <view class="alert-bottom">
+        <button type=""> 确认 </button>
+    </view>
+  </view>
+</view>

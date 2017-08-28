@@ -1,0 +1,41 @@
+
+<!--pages/page6/page6.wxml-->
+<view class="question">
+  <i class="iconfont icon-i1"></i>
+  <text class="active">查看您的所有预约记录</text>
+</view>
+<view class="product-group">
+<block wx:for="{{historyList}}">
+
+  <view class="product-list">
+    <view class="product-img">
+      <image src="{{item.productImage}}"></image>
+    </view>
+    <view class="product-info">
+            <image class="activity-msgbg" src="../../image/page6-over.png"></image>
+      <image class="product-textpic" src="{{item.textImage}}"></image>
+      <view class="activity-group">
+        <image class="product-butterfly" src="../../image/butterfly.png"></image>
+        <view class="activity-msg">
+          <text>上海嘉里中心店\n</text>
+          <text>{{day}}\n</text>
+          <text>{{time}}</text>
+        </view>
+        <view class="btn-box">
+        <view class="correct" catchtap="onCorrectTap">修改</view>
+        <view class="cancel">取消</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+</block>
+</view>
+<view class="moremsg">更多详情，请拨打400-620-6618咨询</view>
+
+
+<view class="btn-confirm-group" wx:if="{{confirmisshow}}">
+<view class="modal-mask"></view>
+<view class="btn btn-confirm" catchtap="onConfirmCancel">确认取消预约</view>
+<view class="btn btn-cancel" catchtap="onConfirmclose">取消</view>
+</view>

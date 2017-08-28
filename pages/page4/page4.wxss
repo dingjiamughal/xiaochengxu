@@ -1,0 +1,58 @@
+/* pages/page4/page4.wxss */
+@import "product-item/product-item-template.wxss";
+.section-msg {
+    text-indent: 25px;
+    float:left;
+    line-height: 60rpx;
+    margin-bottom: 30rpx;
+    overflow: hidden;
+    position: relative;
+    padding-bottom:70rpx;
+}
+.section {
+    position: relative;
+    /*z-index: 9;*/
+}
+.skintime {
+    float:right;
+    margin:40rpx 0;
+    font-size: 16px;
+    text-align: right;
+}
+.page-container {
+    width:670rpx;
+    margin:0 40rpx
+}
+.arrow {
+    text-align: center;
+    position: absolute;
+    bottom: -10rpx;
+    width:100%;
+    /*background: #fff;*/
+    height:130rpx;
+    z-index: 9;
+    line-height: 190rpx;
+
+}
+.arrowup {
+    background: -webkit-linear-gradient(top, rgba(255,255, 255, 0.6) 0%,rgba(255,255, 255, 0.7) 30%,rgba(255,255, 255, 1) 50%, rgba(255,255, 255, 1) 100%);
+}
+
+.arrow icon {
+    font-size: 26px;
+    text-align: center;
+    color:#bebebe;
+}
+.arrow icon:last-child{
+    position: relative;
+    top:6px;
+    right:51px;
+}
+/*.arrow-mask {
+    width:100%;
+    height:30%;
+    position: absolute;
+    top:0;
+    left:0;
+    background: -webkit-linear-gradient(bottom, rgba(255,255, 255, 0) 0%,rgba(255,255, 255, 0.6) 30%, rgba(255,255, 255, 1) 100%);
+}*/

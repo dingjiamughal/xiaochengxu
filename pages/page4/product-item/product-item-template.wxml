@@ -1,0 +1,14 @@
+<template name="product">
+  <view class="product-list">
+    <view class="product-img">
+      <image src="{{imageSrc}}"></image>
+    </view>
+    <view class="product-info">
+      <view class="product-title">「{{title}}」</view>
+      <view class="product-cotent">{{content}}</view>
+      <view class="product-btn">
+        <view class="btnAppointment active" catchtap="onAppointmentTap" data-id="{{id}}">立即预约</view>
+      </view>
+    </view>
+  </view>
+</template>

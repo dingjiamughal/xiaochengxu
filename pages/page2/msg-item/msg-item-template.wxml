@@ -1,0 +1,12 @@
+<template name="msgItem">
+  <view class="msgItem-container">
+    <view class="sidebar" wx:if="{{isshow}}"></view>
+    <view class="name">
+      <text>{{name}}</text>
+    </view>
+    <view class="address">{{address}}</view>
+    <view class="phone">电话：
+      <text>{{phone}}</text>
+    </view>
+  </view>
+</template>

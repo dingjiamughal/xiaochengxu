@@ -1,0 +1,45 @@
+
+<!--pages/page3/page3.wxml-->
+<view class="question">
+  <i class="iconfont icon-i1"></i>
+  <text class="active">请选择您想要体验美肌护理服务的日期和时间</text>
+</view>
+<view class="calendar-group">
+  <view class="calendar"></view>
+  <view class="calendar-msg">
+    <icon class="iconfont icon-rili2" />
+    <text>2017</text>年
+    <text>4</text>月
+    <text>28</text>日</view>
+</view>
+<view class="skintime">
+  <image src="../../image/page3-skintime.png"></image>
+  <view class="datepicker-section">
+    <picker bindchange="bindPickerChange" value="{{index}}" range="{{timeArray}}">
+      <view class="picker active">
+        {{timeArray[index]}}
+        <icon class="iconfont icon-xiangxiajiantou" />
+      </view>
+    </picker>
+  </view>
+  <view class="chooseTime">
+    <icon class="iconfont icon-shijian" />
+    <text>请选择美肌护理服务时间</text>
+  </view>
+</view>
+<view class="botbtn-box">
+  <view class="botbtn" catchtap="onChooseTap">选择</view>
+</view>
+
+
+<view class="modalcontainer">
+  <view class="modal-body">
+    <icon class="modal-close" type="clear" size="12"/>
+    <view class="modal-header msg-modal-header">
+      <view><text>抱歉！</text></view>
+    </view>
+    <view class="modal-middle msg-modal-middle">
+        <view class="row">有人捷足先登了哦！</view>
+        <view class="row">请选择其他时间。</view>    </view>
+  </view>
+</view>

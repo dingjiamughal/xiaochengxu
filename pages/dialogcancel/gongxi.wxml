@@ -1,0 +1,18 @@
+<view class="alertcontainer">
+  <view class="alert-body">
+    <icon class="alert-close" type="clear" size="12"/>
+    <view class="alert-header cancel-alert-header">
+      <view><text>恭喜您！</text></view>
+      <view><text class="header-small">成功预约娇韵诗美肌护肤服务</text></view>
+    </view>
+    <view class="alert-middle cancel-alert-middle">
+        <view class="row">上海嘉里中心店</view>
+        <view class="row">2017.4.13 周四</view>
+        <view class="row">10：00-11：00</view>
+    </view>
+    <view class="alert-bottom cancel-alert-bottom">
+        <view class=""><text>*为了与您共享一次完美体验</text></view>
+        <view class=""><text>请您尽可能准点抵达</text></view>
+    </view>
+  </view>
+</view>

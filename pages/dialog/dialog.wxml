@@ -1,0 +1,30 @@
+<view class="alertcontainer" style="top:{{top}}px">
+  <view class="alert-body">
+  <icon class="alert-close" type="clear" size="12"/>
+    <view class="alert-header">
+      <view>完成绑定</view>
+      <view>预约<text>美肌护理服务！</text>
+      </view>
+    </view>
+    <view class="alert-middle bindalert-middle">
+      <view class="row">
+        <icon class="iconfont icon-shouji" color="#ccc" size="12"/>
+        <input type="text" placeholder="手机号"/>
+      </view>
+      <view class="row">
+        <icon class="iconfont icon-lock" color="#405f80" size="12"/>
+        <view class="getzym">获取验证码</view>
+        <input type="text" placeholder="验证码"/>
+        
+      </view>
+      <view class="row">
+        <icon class="iconfont icon-suo"color="#405f80" size="12"/>
+        <input type="text" placeholder="会员密码"/>
+      </view>
+    </view>
+    <view class="alert-bottom">
+        <button type="" size=""> 确认绑定 </button>
+    </view>
+    
+  </view>
+</view>

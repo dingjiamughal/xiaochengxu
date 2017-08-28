@@ -1,0 +1,263 @@
+/**app.wxss**/
+@font-face {
+  font-family: 'iconfont';  /* project id 202290 */
+  src: url('//at.alicdn.com/t/font_am2ydb72961ug14i.eot');
+  src: url('//at.alicdn.com/t/font_am2ydb72961ug14i.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_am2ydb72961ug14i.woff') format('woff'),
+  url('//at.alicdn.com/t/font_am2ydb72961ug14i.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_am2ydb72961ug14i.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shijian:before { content: "\e63b"; }
+
+.icon-i1:before { content: "\e665"; }
+
+.icon-rili2:before { content: "\e607"; }
+
+.icon-rili1:before { content: "\e600"; }
+
+.icon-suo:before { content: "\e605"; }
+
+.icon-shouji:before { content: "\e647"; }
+
+.icon-shengyutianshu:before { content: "\e64a"; }
+
+.icon-duanxin:before { content: "\e622"; }
+
+.icon-cancel:before { content: "\e61a"; }
+
+.icon-loading:before { content: "\e612"; }
+
+.icon-dianhua:before { content: "\e603"; }
+
+.icon-jia:before { content: "\e61c"; }
+
+.icon-iconquanxuan:before { content: "\e61d"; }
+
+.icon-jian:before { content: "\e61e"; }
+
+.icon-captcha:before { content: "\e6b2"; }
+
+.icon-gouwuche:before { content: "\e63f"; }
+
+.icon-cuowu:before { content: "\e641"; }
+
+.icon-jushoucang:before { content: "\e643"; }
+
+.icon-lajixiang:before { content: "\e645"; }
+
+.icon-lianjie:before { content: "\e646"; }
+
+.icon-shangfan:before { content: "\e64b"; }
+
+.icon-shengyin:before { content: "\e64c"; }
+
+.icon-shouye:before { content: "\e64f"; }
+
+.icon-shuaxin:before { content: "\e650"; }
+
+.icon-sousuo:before { content: "\e651"; }
+
+.icon-tishi:before { content: "\e653"; }
+
+.icon-wancheng:before { content: "\e654"; }
+
+.icon-xiafan:before { content: "\e65b"; }
+
+.icon-xiangshangjiantou:before { content: "\e65d"; }
+
+.icon-xiangxiajiantou:before { content: "\e65e"; }
+
+.icon-xiangyoujiantou:before { content: "\e65f"; }
+
+.icon-xiangzuojiantou:before { content: "\e660"; }
+
+.icon-yanjing:before { content: "\e661"; }
+
+.icon-zhengque:before { content: "\e664"; }
+
+.icon-lingcunwei:before { content: "\e666"; }
+
+.icon-rili:before { content: "\e65a"; }
+
+.icon-bi:before { content: "\e69f"; }
+
+.icon-jushoucanggift:before { content: "\e684"; }
+
+.icon-gou:before { content: "\e61f"; }
+
+.icon-xingming:before { content: "\e714"; }
+
+.icon-shengri:before { content: "\e601"; }
+
+.icon-lock:before { content: "\e72d"; }
+
+
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{
+  font-size:32rpx;
+  font-family: "华文细黑";
+  }
+  .question .iconfont {
+      font-size: 28rpx;
+  }
+
+
+  .modal-mask {
+      position: fixed;
+      left:0;
+      top:0;
+      bottom: 0;
+      right:0;
+      width:100%;
+      height:100%;
+      background: #000;
+      opacity: 0.7;
+      
+  }
+
+  .modalcontainer {
+    border:1px solid #ccc;
+    border-radius: 4px;
+    width:590rpx;
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin-left:-295rpx;
+    margin-top:-300rpx;
+    padding:5px;
+    background: #fff;
+    z-index: 999;
+}
+
+.modal-body {
+    border:1px dashed #ccc;
+    padding:0 15px 5px;
+}
+.modal-body .modal-close {
+    position: absolute;
+    top:25rpx;
+    right:25rpx;
+}
+.modal-header {
+    padding:58rpx 0 38rpx;
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 36rpx;
+}
+
+.modal-header text {
+    color:#ca0032;
+}
+
+.bindmodal-middle .row {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding:5rpx 0;
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    
+}
+
+.active {
+    color:#ca0032;
+}
+
+.getzym {
+    position: absolute;
+    top:5rpx;
+    right:0;
+    color:#d4657d;
+    height:70rpx;
+    line-height: 70rpx;
+    float:left;
+}
+.bindmodal-middle icon {
+    color:#ccc;
+    margin:auto 30rpx auto;
+}
+.bindmodal-middle input {
+    height:70rpx;
+    float: left;
+}
+.yzm-input {
+    width:250rpx;
+}
+
+.modal-bottom button{
+    margin:30rpx auto 50rpx;
+    width:360rpx;
+    height:70rpx;
+    line-height: 70rpx;
+    background: #ca0030;
+    font-size:34rpx;
+    color:#fff;
+    border-radius: 0;
+    letter-spacing: 3rpx;
+}
+.modal-bottom view {
+    font-size:24rpx;
+    text-align: center;
+    color:#bdbdbd;
+    margin-top:20rpx;
+}
+.msg-modal-header {
+    border:0;
+}
+.msg-modal-middle {
+    text-align: center;
+    margin-bottom: 36rpx;
+}
+.msg-modal-middle .row {
+    margin-bottom: 5rpx;
+}
+.moremsg {
+    font-size:24rpx;
+    color:#ccc;
+    margin:36rpx 0 60rpx 0; 
+}
+
+.placeholderColor {
+    color:#bdbdbd;
+}
+
+/*actionsheet
+*/
+.btn-confirm-group .btn {
+    width:706rpx;
+    height:116rpx;
+    line-height: 116rpx;
+    text-align: center;
+    font-size: 36rpx;
+    background: #fff;
+    position: fixed;
+    left:22rpx;
+    border-radius:20rpx;
+}
+.btn-confirm-group .btn-confirm {
+    bottom:180rpx;
+    color:#ca0032;
+}
+.btn-confirm-group .btn-cancel {
+    bottom:50rpx;
+    color:#bebebe;
+}
